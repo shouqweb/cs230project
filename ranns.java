@@ -1,11 +1,12 @@
 class Vehicle {
-    
+    //Vehicle info variables
     private String name;
     private String brand;
     private boolean available;
     private int year;
     private boolean insuranceIncluded;
     private double dailyRate;
+    //Constructor to set the info and make it available by default
     public Vehicle(String name, String brand, int year,
                     boolean insuranceIncluded, double dailyRate) {
     this.name = name;
@@ -15,9 +16,11 @@ class Vehicle {
     this.dailyRate = dailyRate;
     this.available = true;
     }
+    //Getters to get the values
     public String getName() {
         return name;
     }
+    //Setters to update the values
     public void setName(String name) {
         this.name = name;
     }
@@ -84,6 +87,6 @@ class Main {
             car1.setInsuranceIncluded(false);
             System.out.println(car1.getInsuranceIncluded());
             car1.setDailyRate(200.0);
-            System.out.println(car1.getDailyRate());
+           System.out.println(car1.getDailyRate());
     }
 }
