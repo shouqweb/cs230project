@@ -105,6 +105,45 @@ class Main {
             System.out.println("Update Available: " + car1.getAvailable());
             System.out.println("Update Year: " + car1.getYear());
             System.out.println("Update Insurance: " + car1.getInsuranceIncluded());
-            System.out.println("Update Daily Rate: " + car1.getDailyRate());
+            System.out.println("Update Daily Rate: " + car1.getDailyRate()):
+            Vehicle[] vehicles = {car1, car2, car3};
+java.util.Scanner input = new java.util.Scanner(System.in);
+
+while (true) {
+    System.out.println("\n=== Main Menu ===");
+    System.out.println("1. Client Search");
+    System.out.println("2. Rent Vehicle");
+    System.out.println("3. Return Vehicle");
+    System.out.println("4. Exit");
+    System.out.print("Enter choice: ");
+
+    if (!input.hasNextLine()) {
+        break;
+    }
+
+    String choice = input.nextLine().trim();
+
+    switch (choice) {
+        case "1":
+            Danah.clientMenu(vehicles, vehicles.length, input);
+            break;
+
+        case "2":
+            shouq.processTask4Menu(
+                vehicles, vehicles.length, input, "4");
+            break;
+
+        case "3":
+            shouq.processTask4Menu(
+                vehicles, vehicles.length, input, "5");
+            break;
+
+        case "4":
+            return;
+
+        default:
+            System.out.println("Invalid choice.");
+    }
+}    
     }
 }
