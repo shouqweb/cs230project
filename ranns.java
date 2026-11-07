@@ -69,24 +69,42 @@ class Main {
            "Accord", "Honda", 2024, true, 180.0
             );
             
-            System.out.println(car1.getName());
-            System.out.println(car2.getName());
-            System.out.println(car3.getName());
+            System.out.println("===== Car 1 =====");
+            System.out.println("Name: " + car1.getName());
+            System.out.println("Brand: " + car1.getBrand());
+            System.out.println("Available: " + car1.getAvailable());
+            System.out.println("Year: " + car1.getYear());
+            System.out.println("Insurance: " + car1.getInsuranceIncluded());
+            System.out.println("Daily Rate: " + car1.getDailyRate());
             
-            System.out.println(car1.getBrand());
-            System.out.println(car1.getAvailable());
-            System.out.println(car1.getYear());
-            System.out.println(car1.getInsuranceIncluded());
-            System.out.println(car1.getDailyRate());
+            System.out.println("===== Car 2 =====");
+            System.out.println("Name: " + car2.getName());
+            System.out.println("Brand: " + car2.getBrand());
+            System.out.println("Available: " + car2.getAvailable());
+            System.out.println("Year: " + car2.getYear());
+            System.out.println("Insurance: " + car2.getInsuranceIncluded());
+            System.out.println("Daily Rate: " + car2.getDailyRate());
+            
+            System.out.println("===== Car 3 =====");
+            System.out.println("Name: " + car3.getName());
+            System.out.println("Brand: " + car3.getBrand());
+            System.out.println("Available: " + car3.getAvailable());
+            System.out.println("Year: " + car3.getYear());
+            System.out.println("Insurance: " + car3.getInsuranceIncluded());
+            System.out.println("Daily Rate: " + car3.getDailyRate());
+            
+            System.out.println("===== Testing Setters =====");
+            
             car1.setBrand("Nissan");
-            System.out.println(car1.getBrand());
             car1.setAvailable(false);
-            System.out.println(car1.getAvailable());
             car1.setYear(2025);
-            System.out.println(car1.getYear());
             car1.setInsuranceIncluded(false);
-            System.out.println(car1.getInsuranceIncluded());
             car1.setDailyRate(200.0);
-           System.out.println(car1.getDailyRate());
+            
+            System.out.println("Update Brand: " + car1.getBrand());
+            System.out.println("Update Available: " + car1.getAvailable());
+            System.out.println("Update Year: " + car1.getYear());
+            System.out.println("Update Insurance: " + car1.getInsuranceIncluded());
+            System.out.println("Update Daily Rate: " + car1.getDailyRate());
     }
 }
