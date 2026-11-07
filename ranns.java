@@ -105,7 +105,7 @@ class Main {
             System.out.println("Update Available: " + car1.getAvailable());
             System.out.println("Update Year: " + car1.getYear());
             System.out.println("Update Insurance: " + car1.getInsuranceIncluded());
-            System.out.println("Update Daily Rate: " + car1.getDailyRate()):
+            System.out.println("Update Daily Rate: " + car1.getDailyRate());
             Vehicle[] vehicles = {car1, car2, car3};
 java.util.Scanner input = new java.util.Scanner(System.in);
 
